@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+
+#home {
+  background-image:url("img/design.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+body{
+  font-family: "メイリオ";
+  line-height: 1.7;
+  color: rgb(228, 77, 208);
+  background-color:rgb(247, 238, 218);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* サイドメニューのCSS */
+
+.main-nav {
+  display: flex;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+ul li a{
+  color: #fb6377;
+  text-decoration: none;
+}
+
+ul li a:hover{
+  color:rgb(251, 45, 210);
+}
+
+.header-image_title_sub {
+	color: #f77ac7; /* 文字色 */
+	padding: 10px 10px 10px 60px; /* 上・右・下・左の余白 */
+	position: relative;
+  left: 35%;
+}
+
+.header-image_title_sub:before {
+	content: '＊*'; /*花に見せかけるためのアスタリスク*/
+	color: #fff; /* アスタリスクの色 */
+	display: inline-block;
+	font-size: 30px; /* アスタリスクの大きさ */
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	text-shadow: 0px 0px 6px #EAA8BF, 0px 0px 4px #EAA8BF, 0 0 0.5px #EAA8BF; /* アスタリスク周りの影 */
+}
+
+.header-image_title_sub:after {
+	border-bottom: 2px dotted #ff92f6; /* 下線 */
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 5px;
+	width: 20%;
+}
+
+.contents-item {
+   float: left;
+   text-align: center;
+   width: 10%;
+   margin: 30px;
+   font-size: 2rem;
+}
+
+.card {
+  float: left;
+  width: 250px;
+  background: rgb(255, 255, 255);
+  transition:box-shadow 0.3s,transform 0.3s;
+  margin-right: 50px;
+	margin-bottom: 50px;
+  margin-left: 60px;
+}
+
+.card:hover {
+  box-shadow:0 0 20px rgb(241, 165, 57), 0 2px 5px rgb(253, 151, 255);
+  transform:translate(0, -2px);
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(190, 88, 37);
+}
+
+.card-text {
+  color: rgb(249, 147, 14);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+
+.card-link a:hover {
+  color: #0090aa;
+}
+
+.cardimg {
+  width: 300px;
+  position: relative;
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+  transform:translate(-4.5px, -4.5px);
+  transition:box-shadow 0.3s, transform 0.3s;
+  box-shadow:10px 10px 0 rgb(246, 254, 134);
+}
+
+.cardimg:hover {
+    box-shadow:1px 1px 0 rgb(254, 191, 96);
+    transform:initial;
+}
+
+.report_name{
+  color: #f886e9;
+  text-align: center;
+  padding: 0.25em;
+  border-top: solid 2px #fda3ff;
+  border-bottom: solid 2px #f699d2;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+
+.report_title{
+  position: relative;
+  color: #f78011;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.report_title:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #cfffc5;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.report_entry{
+  text-align: center;
+  padding: 1em;
+  border: 3px solid rgb(241, 200, 200);
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+
+.report_order {
+	color: #ff99ac; /* 文字色 */
+	padding: 10px 10px 10px 70px; /* 上・右・下・左の余白 */
+	position: relative;
+}
+
+.report_order:before {
+	background-color: #f193b7; /* 円1の色 */
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 25px; /* 円1の幅 */
+	height: 25px; /* 円1の高さ */
+	box-shadow: 25px 10px 0px #f193b7, /* 円2の位置・色 */
+			 3px 25px 0px #f193b7; /* 円3の位置・色 */
+}
+
+.report_order:after {
+	border: 4px solid #fff; /* 白抜き円 */
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 21px;
+	width: 15px; /* 白抜き円の幅 */
+	height: 15px; /* 白抜き円の高さ */
+}
+
+.top_title {
+	color: #fc8a99; /* 文字色 */
+	padding: 10px 10px 10px 60px; /* 上・右・下・左の余白 */
+	position: relative;
+  text-shadow: 0px 0px 6px #f4b0dc, 0px 0px 4px hsl(338, 75%, 89%), 0 0 0.5px #ffdde9;
+}
+
+.top_title:before{	content: '＊*'; /*花に見せかけるためのアスタリスク*/
+	color: #fff; /* アスタリスクの色 */
+	display: inline-block;
+	font-size: 30px; /* アスタリスクの大きさ */
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	text-shadow: 0px 0px 6px #EAA8BF, 0px 0px 4px #EAA8BF, 0 0 0.5px #EAA8BF; /* アスタリスク周りの影 */
+}
+
+h3 a {
+    text-decoration:none;
+    background-color: #f5d5da; /* 背景色 */
+    border-radius: 5px;
+    color: #ef858c; /* 文字色 */
+    padding: 10px 10px 10px 60px; /* 上・右・下・左の余白 */
+    position: relative;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 6px #fff, 0px 0px 4px #fff, 0 0 0.5px #fff; /* 文字の影 */
+  }
+
+h3 a:before {
+    content: '＊*'; /*花に見せかけるためのアスタリスク*/
+    color: #fff; /* アスタリスクの色 */
+    display: inline-block;
+    font-size: 30px; /* アスタリスクの大きさ */
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    text-shadow: 0px 0px 3px #fff, 0px 0px 2px #fff, 0 0 0.5px #fff; /* アスタリスク周りの影 */
+  }
+
+  h3 a:after {
+    border-bottom: 2px dotted #fff; /* 下線 */
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+  }
+  
+  .page_feed {
+    width: 30px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-align: center;
+    background: #ffa5dc;
+    color: rgb(253, 253, 253);
+  }
+
+/* ページャーのCSS */
+
+  .pager {
+    text-align: left;
+  }
+
+  .pager .pagination li {
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+    display: inline-block;
+    background:#fe829a;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+  }
+
+  .pager .pagination li a{
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display:table;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+
+  .pager .pagination li a span{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .pager .pagination li a:hover,
+  .pager .pagination li a.active{
+    color: #000;
+    background: rgb(249, 237, 170);
+    border-radius: 50px;
+  }
+
